@@ -1,0 +1,39 @@
+Sakura 五十音图音频来源与许可
+
+主要来源：
+https://github.com/veardk/just-gojuon
+
+固定版本：
+8d4af588c5edb029d7de66f3a49d18bc7656080d
+
+使用的音频：
+public/sounds/seion/*.mp3
+public/sounds/dakuon/*.mp3
+public/sounds/handakuon/*.mp3
+public/sounds/yoon/*.mp3
+
+「を」使用同一音频包中的「お」录音。现代日语中「を」与「お」的读音相同。
+为适配 Sakura 的本地播放格式，源 MP3 被转换为 WAV，并进行了静音裁剪、
+淡入淡出和响度统一处理。
+
+MIT License
+
+Copyright (c) 2025 Levon
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

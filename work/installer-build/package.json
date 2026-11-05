@@ -1,0 +1,75 @@
+{
+  "name": "nihongo-journey",
+  "version": "1.7.4",
+  "description": "Sakura - 面向零基础学习者的日语学习桌面应用",
+  "main": "main.js",
+  "author": "Sakura",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis",
+    "test:course": "node work/test-course-resources.js",
+    "eval:speech": "node work/evaluate-public-speech.js",
+    "eval:jvs": "node work/jvs-small-eval.js",
+    "check:content": "node work/check-content.js",
+    "audio:plan": "node work/audio-production.js plan",
+    "audio:check": "node work/audio-production.js check",
+    "audio:adopt": "node work/audio-production.js adopt-existing",
+    "audio:generate": "node work/audio-production.js generate",
+    "audio:master": "node work/audio-mastering.js",
+    "audio:master:apply": "node work/audio-mastering.js --apply",
+    "test:audio": "node work/test-audio-mastering.js",
+    "test": "node --check main.js && node --check preload.js && node --check src/app.js && node --check src/romaji.js && node --check src/shadow-utils.js && node --check src/acoustic-analysis.js && node --check src/mora-alignment.js && node --check src/pronunciation-analysis.js && node work/test-planner-regression.js"
+  },
+  "devDependencies": {
+    "electron": "44.9.0",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "com.nihongojourney.desktop",
+    "productName": "Sakura",
+    "asar": true,
+    "asarUnpack": [
+      "asr/**/*"
+    ],
+    "npmRebuild": false,
+    "electronDist": "node_modules/electron/dist",
+    "directories": {
+      "output": "../installer-build-output"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "save-format.js",
+      "asr/**/*",
+      "src/**/*",
+      "build/icon.png",
+      "build/icon.ico",
+      "build/sakura-cover.webp",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "Sakura Setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Sakura",
+      "deleteAppDataOnUninstall": false,
+      "uninstallDisplayName": "Sakura"
+    }
+  }
+}

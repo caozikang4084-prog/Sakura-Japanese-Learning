@@ -1,0 +1,20 @@
+Sakura Mobile - speech components
+
+Vosk API 0.3.47
+- Source: https://github.com/alphacep/vosk-api
+- Distribution: Maven Central, com.alphacephei:vosk-android:0.3.47
+- License: Apache License 2.0
+- SHA-256: e3b82bb877753569f5e5f007807e4bc6165c34ba04e772d1df93552af0d27ffa
+
+Japanese small model 0.22
+- Source: https://alphacephei.com/vosk/models/vosk-model-small-ja-0.22.zip
+- License: Apache License 2.0
+- SHA-256: efa092d280153a77615e9e0c7d7283e93e600de3d19d3bec686c57ef19d52eac
+- Intended for local, offline speech-to-text in this private application.
+
+Java Native Access (JNA) 5.13.0
+- Source: https://github.com/java-native-access/jna
+- Distribution: Maven Central, net.java.dev.jna:jna:5.13.0
+- License: LGPL-2.1-or-later or Apache License 2.0
+
+The application does not upload recorded speech to a remote speech service.

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#fff7fa" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' file:; script-src 'self' file:; style-src 'self' 'unsafe-inline' file:; img-src 'self' data: file:; media-src 'self' file: blob:; connect-src 'self' file: https://api.mymemory.translated.net"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <title>Sakura · 日语学习</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./mobile-overrides.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">桜</div>
+          <div>
+            <div class="brand-title">Sakura</div>
+            <div class="brand-subtitle">Japanese Learning</div>
+          </div>
+        </div>
+
+        <nav id="nav" class="nav" aria-label="主导航"></nav>
+
+        <div class="sidebar-footer">
+          <div class="save-state" id="save-state">
+            <span class="save-dot"></span>
+            <span id="save-text">本地学习记录</span>
+          </div>
+          <button class="text-button" id="data-folder-button" type="button">打开数据位置</button>
+          <div class="version" id="version-text"></div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow" id="top-eyebrow">今日学习</div>
+            <h1 class="page-title" id="page-title">首页</h1>
+          </div>
+          <div class="topbar-meta">
+            <div class="date-text" id="date-text"></div>
+            <div class="stage-pill" id="stage-pill">入门阶段</div>
+          </div>
+        </header>
+        <div class="view" id="view"></div>
+      </main>
+    </div>
+
+    <aside class="app-watermark" role="note"
+      aria-label="本软件由烟熏雪糕独立自主开发制作，仅限私人用途">
+      <span class="app-watermark-mascot" aria-hidden="true">🍨 (๑˃̵ᴗ˂̵)و</span>
+      <span class="app-watermark-copy">
+        <strong>烟熏雪糕</strong>独立自主开发制作
+        <small>仅限私人用途 · 请勿商用或转售</small>
+      </span>
+    </aside>
+
+    <div class="modal-backdrop" id="modal-backdrop" hidden>
+      <div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="./data/kana.js"></script>
+    <script src="./romaji.js"></script>
+    <script src="./data/words.js"></script>
+    <script src="./data/grammar.js"></script>
+    <script src="./audio/manifest.js"></script>
+    <script src="./data/content.js"></script>
+    <script src="./shadow-utils.js"></script>
+    <script src="./acoustic-analysis.js"></script>
+    <script src="./mora-alignment.js"></script>
+    <script src="./pronunciation-analysis.js"></script>
+    <script src="./mobile-bridge.js"></script>
+    <script src="./app.js"></script>
+    <script src="./mobile-word-sheet.js"></script>
+    <script src="./mobile-course.js"></script>
+  </body>
+</html>

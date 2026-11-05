@@ -1,0 +1,11 @@
+Sakura v1.6.0
+
+启动方式：
+双击“START-SAKURA.cmd”或“启动Sakura.cmd”。
+旧版启动脚本仍保留，用于兼容原有快捷方式。
+
+本压缩包已包含 Electron 运行时，不需要安装 Node.js、npm 或额外依赖。
+学习进度保存在系统用户数据目录，不在本程序目录中；覆盖或移动本程序不会主动清除学习记录。
+
+如果启动时提示 Electron sandbox / ALL APPLICATION PACKAGES 权限错误，
+请右键“修复Electron启动权限.cmd”，选择“以管理员身份运行”一次。

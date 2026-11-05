@@ -1,0 +1,18 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lightweight:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Check no-gate desktop and mobile entry points
+        run: node work/test-free-edition.js
+      - name: Run planner regression tests
+        run: node work/installer-build/work/test-planner-regression.js

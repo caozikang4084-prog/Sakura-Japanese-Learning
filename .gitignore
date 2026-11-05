@@ -1,0 +1,38 @@
+# Dependencies and build output
+node_modules/
+/dist/
+installer-build-output/
+mobile-build-*/
+packaging-*/
+*.exe
+*.apk
+*.idsig
+*.7z
+
+# Local data and secrets
+.env
+.env.*
+*.keystore
+*.pem
+*.pfx
+*.db
+*.db-shm
+*.db-wal
+license-server/
+.cloudflared/
+activation-codes.txt
+admin-password.txt
+user-data-backup/
+smoke-user-data-*/
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local logs
+*.log
+logs/
+
