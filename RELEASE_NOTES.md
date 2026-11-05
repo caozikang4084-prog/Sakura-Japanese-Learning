@@ -6,8 +6,6 @@ First public open-source release.
 
 - `Sakura Setup 1.7.4.exe` – Windows x64 installer
 - `Sakura-Mobile-1.7.9.apk` – Android 7.0+
-- `Sakura-Desktop-Assets-1.7.4.zip` – desktop audio and Vosk model
-- `Sakura-Mobile-Assets-1.7.9.zip` – Android audio and recognition assets
 - `SHA256SUMS-RELEASE.txt` – release file checksums
 
 ## Changes
@@ -24,8 +22,9 @@ First public open-source release.
 
 ## Source-build assets
 
-The source repository excludes large generated media. Download the asset
-packs above and follow `docs/ASSETS.md`.
+The source repository excludes generated media to stay lightweight. The
+official packages contain the complete offline content; extraction
+instructions are in `docs/ASSETS.md`.
 
 ## Notes
 

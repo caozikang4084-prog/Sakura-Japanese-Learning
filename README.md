@@ -40,11 +40,11 @@ Use the repository's **Releases** page for:
 
 - Windows installer
 - Android APK
-- Desktop content pack
-- Desktop offline recognition model
-- Android content pack
 
-Source-only clones do not include the multi-gigabyte audio/model packs.
+The prebuilt applications contain the complete offline content. Source-only
+clones omit generated media to keep the repository lightweight; see
+[docs/ASSETS.md](docs/ASSETS.md) for extracting those files from the
+official packages.
 
 ## Privacy
 
@@ -74,8 +74,8 @@ npm install
 npm start
 ```
 
-Extract the desktop content and ASR packs into their documented locations
-before building a complete distribution.
+Extract the desktop audio and ASR files from the official Windows package
+as documented in `docs/ASSETS.md` before building a complete distribution.
 
 ### Android
 
